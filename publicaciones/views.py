@@ -66,3 +66,7 @@ class PublicacionListView(ListView):
 #       model = ...
 #       context_object_name = "..."
 #       pk_url_kwarg = "..."
+class PublicacionDetailView(DetailView):
+    model = Publicacion
+    context_object_name = "publicacion"
+    pk_url_kwarg = "publicacion_id"
